@@ -7,9 +7,9 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
-import WorkExperience from "./sections/WorkExperience";
 import NavScroll from "./components/NavScroll";
 import SlidePanel from "./components/SliderPanel";
+import Timeline from "./sections/Timeline";
 import useSmoothScroll from "./hooks/useSmoothScroll";
 
 export default function App() {
@@ -25,7 +25,7 @@ const [isOpen, setIsOpen] = useState(false);
         <Identity />
         <Skills />
         <Capabilities />
-        <WorkExperience />
+        <Timeline />
         <Projects />
         <Contact />
         <NavScroll />

@@ -18,7 +18,7 @@ export default function WorkExperience() {
   return (
     <section id="experience" className="py-16  text-white">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center">Work Experience</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center">Experience & Education</h2>
         
         <div className="flex flex-col gap-8">
           {workData.map((job, index) => (
