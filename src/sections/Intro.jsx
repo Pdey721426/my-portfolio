@@ -8,11 +8,11 @@ export default function Intro() {
   const tagIcons = [
     {
       icon: <FaGithub />,
-      link: "https://github.com/PrakashRiddhi12345",
+      link: "https://github.com/Pdey721426",
     },
     {
       icon: <FaLinkedin />,
-      link: "https://www.linkedin.com/in/prakash-riddhi-12345/",
+      link: "https://www.linkedin.com/in/prakaashdey07",
     },
     {
       icon: <FaFacebook />,
