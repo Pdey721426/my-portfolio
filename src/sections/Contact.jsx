@@ -34,7 +34,7 @@ export default function Contact() {
                 <Mail size={20} />
               </span>
               <span className="text-sm md:text-base">
-                your@email.com
+                deyprakash152@gmail.com
               </span>
             </div>
 
