@@ -6,7 +6,7 @@ export default function Timeline() {
         Education & Experience
       </h2>
 
-      <div className="relative max-w-4xl mx-auto pr-5">
+      <div className="relative max-w-4xl mx-auto pr-5  md:pr-0">
         {/* Vertical Line */}
         <div className="absolute left-4 md:left-1/2 top-0 h-full w-[2px] bg-gray-300"></div>
 
