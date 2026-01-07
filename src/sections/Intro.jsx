@@ -23,7 +23,7 @@ export default function Intro() {
 
   return (
     <Section className="lg:h-screen flex flex-col lg:justify-start  md:justify-center md:h-50vh">
-      <div id="intro" className="text-center lg:mt-20 md:mt-16">
+      <div id="intro" className="text-center lg:mt-[1%] md:mt-16">
         <h1
           className="text-4xl sm:text-5xl md:text-6xl font-bold  mb-6 flex justify-center items-center flex-wrap  gap-2 lg:gap-5 text-center"
         >
