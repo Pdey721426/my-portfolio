@@ -28,7 +28,7 @@ export default function Intro() {
           className="text-4xl sm:text-5xl md:text-6xl font-bold  mb-6 flex justify-center items-center flex-wrap  gap-2 lg:gap-5 text-center"
         >
           Hi, I’m
-          <span className="flex items-center gap-3 text-5xl md:text-6xl">
+          <span className="flex items-center gap-6 text-5xl md:text-6xl">
             Prakash
             <IoHandLeftSharp
               aria-label="waving hand"

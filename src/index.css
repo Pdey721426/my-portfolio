@@ -3,16 +3,21 @@
 @tailwind utilities;
 
 body {
+  scroll-behavior: smooth;
   @apply bg-bg text-text antialiased;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @apply font-heading text-text;
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #6EE7B7, #3B82F6);
+  background: linear-gradient(90deg, #6ee7b7, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.5s;
@@ -24,21 +29,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @keyframes handWave {
-  0% { transform: rotate(-35deg); }
-  10% { transform: rotate(-15deg); }
-  20% { transform: rotate(-45deg); }
-  30% { transform: rotate(-15deg); }
-  40% { transform: rotate(-40deg); }
-  50% { transform: rotate(-20deg); }
-  60% { transform: rotate(-35deg); }
-  100% { transform: rotate(-35deg); }
+  0% {
+    transform: rotate(-35deg);
+  }
+  10% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(-45deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(-40deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  60% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
 }
 
 .wave-hand {
   transform-origin: bottom center;
   animation: handWave 1.5s ease-in-out;
-  animation-delay: 1.5s;   /* ⏳ delay before waving */
+  animation-delay: 1.5s; /* ⏳ delay before waving */
 }
-
-
-

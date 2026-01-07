@@ -18,7 +18,7 @@ import {
   SiPython,
   SiExpress,
   SiGit,
-  SiGithub
+  SiGithub,
 } from "react-icons/si";
 
 export default function Skills() {
@@ -50,7 +50,7 @@ export default function Skills() {
   ];
 
   return (
-    <Section id="skills" className="py-16 ">
+    <Section id="skills" className="py-16">
       <div>
         <h2 className="text-3xl font-semibold mb-12 text-center">
           Skills & Expertise

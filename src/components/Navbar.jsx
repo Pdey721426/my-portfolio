@@ -95,7 +95,7 @@ export default function Navbar({ isOpen, setIsOpen }) {
       </ul>
 
       {/* Mobile Hamburger */}
-      <div className="md:hidden text-2xl">
+      <div className="lg:hidden text-2xl">
         {/* Add a simple toggle menu later */}
         <button onClick={() => setIsOpen(!isOpen)} >☰</button>
       </div>

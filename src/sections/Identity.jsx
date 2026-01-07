@@ -13,14 +13,14 @@ export default function Identity() {
           <br /> <br />I enjoy working with modern tools including AI-assisted
           development to build efficient and scalable applications.
         </p>
-        <div className="mt-6 flex gap-4">
+        <div className="mt-6 flex gap-4 flex-wrap">
           <span className="px-4 py-1 text-sm rounded-full border border-gray-600 text-gray-300 flex items-center">
             Clarity
           </span>
           <span className="px-4 py-1 text-sm rounded-full border border-gray-600 text-gray-300 flex items-center">
             Reliability
           </span>
-          <span className="px-4 py-1 text-sm rounded-full border border-gray-600 text-gray-300 flex items-center">
+          <span className="px-3 py-1 text-sm rounded-full border border-gray-600 text-gray-300 flex items-center">
             Future-ready
           </span>
         </div>
