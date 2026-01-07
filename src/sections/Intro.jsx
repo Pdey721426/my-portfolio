@@ -25,7 +25,7 @@ export default function Intro() {
     <Section className="lg:h-screen flex flex-col lg:justify-start  md:justify-center md:h-50vh">
       <div id="intro" className="text-center lg:mt-20 md:mt-16">
         <h1
-          className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 flex justify-center items-start md:items-center lg:items-center flex-col md:flex-row lg:flex-row gap-2 lg:gap-5 text-center"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold  mb-6 flex justify-center items-center flex-wrap  gap-2 lg:gap-5 text-center"
         >
           Hi, I’m
           <span className="flex items-center gap-3 text-5xl md:text-6xl">
