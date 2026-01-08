@@ -1,5 +1,7 @@
 import Section from "../components/Section";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { IoMdMailUnread } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Contact() {
   return (
@@ -11,10 +13,6 @@ export default function Contact() {
           grid grid-cols-1 lg:grid-cols-2
           gap-12
           p-8 md:p-12
-          rounded-2xl
-          border border-white/10
-          bg-gradient-to-br from-white/5 to-white/0
-          backdrop-blur
         "
       >
         {/* LEFT: Contact Details */}
@@ -30,8 +28,9 @@ export default function Contact() {
 
           <div className="space-y-5">
             <div className="flex items-center gap-4">
-              <span className="p-3 rounded-lg bg-accent/10 text-accent">
-                <Mail size={20} />
+              <span className="p-3 rounded-full bg-accent/10 text-accent">
+                {/* <Mail size={20} /> */}
+                <IoMdMailUnread size={20} />
               </span>
               <span className="text-sm md:text-base">
                 deyprakash152@gmail.com
@@ -39,8 +38,9 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center gap-4">
-              <span className="p-3 rounded-lg bg-accent/10 text-accent">
-                <MapPin size={20} />
+              <span className="p-3 rounded-full bg-accent/10 text-accent">
+                {/* <MapPin size={20} /> */}
+                <FaLocationDot size={20} />
               </span>
               <span className="text-sm md:text-base">
                 Kolkata, West Bengal, India
@@ -48,22 +48,20 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center gap-4">
-              <span className="p-3 rounded-lg bg-accent/10 text-accent">
-                <Phone size={20} />
+              <span className="p-3 rounded-full bg-accent/10 text-accent">
+                {/* <Phone size={20} /> */}
+                <BsFillTelephoneFill size={20} />
               </span>
-              <span className="text-sm md:text-base">
-                Available on request
-              </span>
+              <span className="text-sm md:text-base">Available on request</span>
             </div>
           </div>
         </div>
 
         {/* RIGHT: Contact Form */}
         <form
+          action="https://formsubmit.co/deyprakash152@gmail.com"
+          method="POST"
           className="
-            bg-white/5
-            border border-white/10
-            rounded-xl
             p-6 md:p-8
             space-y-5
           "
@@ -73,7 +71,7 @@ export default function Contact() {
             <input
               type="text"
               required
-              className="w-full px-4 py-3 rounded-lg bg-transparent border border-white/20 focus:border-accent outline-none"
+              className="w-full px-4 py-3 rounded-2xl bg-transparent border border-white/20 focus:border-accent outline-none"
             />
           </div>
 
@@ -82,7 +80,7 @@ export default function Contact() {
             <input
               type="email"
               required
-              className="w-full px-4 py-3 rounded-lg bg-transparent border border-white/20 focus:border-accent outline-none"
+              className="w-full px-4 py-3 rounded-2xl bg-transparent border border-white/20 focus:border-accent outline-none"
             />
           </div>
 
@@ -91,23 +89,24 @@ export default function Contact() {
             <textarea
               rows="4"
               required
-              className="w-full px-4 py-3 rounded-lg bg-transparent border border-white/20 focus:border-accent outline-none resize-none"
+              className="w-full px-4 py-3 rounded-2xl bg-transparent border border-white/20 focus:border-accent outline-none resize-none"
             />
           </div>
-
-          <button
-            type="submit"
-            className="
-              w-full
+          <div className="text-center">
+            <button
+              type="submit"
+              className="
+              min-w-40
               bg-accent text-bg
               py-3 rounded-lg
               font-semibold
               transition-all
               hover:scale-[1.02]
             "
-          >
-            Send Message
-          </button>
+            >
+              Send Message
+            </button>
+          </div>
         </form>
       </div>
     </Section>

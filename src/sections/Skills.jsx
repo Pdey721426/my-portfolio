@@ -19,6 +19,7 @@ import {
   SiExpress,
   SiGit,
   SiGithub,
+  SiJquery
 } from "react-icons/si";
 
 export default function Skills() {
@@ -30,6 +31,7 @@ export default function Skills() {
       icon: <IoLogoJavascript />,
       color: "text-yellow-400",
     },
+    { name: "Jquery", icon: <SiJquery />, color: "text-blue-400" },
     { name: "Python", icon: <SiPython />, color: "text-blue-400" },
     { name: "React", icon: <IoLogoReact />, color: "text-cyan-400" },
     { name: "Node.js", icon: <IoLogoNodejs />, color: "text-green-500" },

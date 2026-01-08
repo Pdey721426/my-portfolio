@@ -4,7 +4,7 @@ function TimelineItem({ title, subtitle, date, type, position = "" }) {
       {/* Dot */}
       <div
         className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full 
-        bg-white border-4 border-blue-500 z-10"
+        bg-white border-4 border-accent z-10"
       ></div>
 
       {/* Content Card */}
@@ -12,7 +12,7 @@ function TimelineItem({ title, subtitle, date, type, position = "" }) {
         className={`ml-12 md:ml-[55%] bg-white dark:bg-[#111827] 
         shadow-lg rounded-xl p-6 w-full md:w-[45%] ${position}`}
       >
-        <span className="text-sm text-blue-500 font-semibold uppercase">
+        <span className="text-sm text-accent font-semibold uppercase">
           {type}
         </span>
 
