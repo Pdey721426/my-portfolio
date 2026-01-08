@@ -1,15 +1,40 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { projects } from "../data/projects";
-import { GrFormNextLink , GrFormPreviousLink} from "react-icons/gr";
+import { GrFormNextLink, GrFormPreviousLink } from "react-icons/gr";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
+  const [open, setOpen] = useState(false);
+  const [photoIndex, setPhotoIndex] = useState(0);
 
-  const prev = () =>
-    setIndex((index - 1 + projects.length) % projects.length);
-  const next = () =>
-    setIndex((index + 1) % projects.length);
+
+  function FileSystemDirectoryHandle(imageUrl) {
+    console.log("Image URL:", imageUrl);
+    console.log(open);
+
+  }
+
+
+  <Lightbox
+  open={open}
+  close={() => setOpen(false)}
+  index={photoIndex}     // 👈 START IMAGE
+      slides={[
+          { src: projects[photoIndex].image
+
+           }
+        ]}
+/>
+
+
+  const prev = () => setIndex((index - 1 + projects.length) % projects.length);
+  const next = () => setIndex((index + 1) % projects.length);
 
   const project = projects[index];
 
@@ -30,19 +55,21 @@ export default function Projects() {
             className="bg-[#111] rounded-2xl p-6 md:p-8 shadow-xl"
           >
             {/* Image */}
-            <div className="overflow-hidden rounded-xl mb-6">
+            <div className="overflow-hidden rounded-xl mb-6" onClick ={()=>{
+              FileSystemDirectoryHandle(project.image);
+            }}  >
               <img
+
                 src={project.image}
                 alt={project.title}
                 className="w-full h-56 md:h-72 object-cover hover:scale-105 transition"
               />
+             
             </div>
 
             {/* Content */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-semibold">
-                {project.title}
-              </h3>
+              <h3 className="text-2xl font-semibold">{project.title}</h3>
 
               <p className="text-gray-400">{project.desc}</p>
 
@@ -84,11 +111,17 @@ export default function Projects() {
 
         {/* Controls */}
         <div className="flex justify-between mt-6">
-          <button onClick={prev} className="opacity-70 hover:opacity-100 flex items-center gap-1">
-           <GrFormPreviousLink className="text-xl"/> Previous
+          <button
+            onClick={prev}
+            className="opacity-70 hover:opacity-100 flex items-center gap-1"
+          >
+            <GrFormPreviousLink className="text-xl" /> Previous
           </button>
-          <button onClick={next} className="opacity-70 hover:opacity-100 flex items-center gap-1">
-            Next <GrFormNextLink className="text-xl"/>
+          <button
+            onClick={next}
+            className="opacity-70 hover:opacity-100 flex items-center gap-1"
+          >
+            Next <GrFormNextLink className="text-xl" />
           </button>
         </div>
       </div>

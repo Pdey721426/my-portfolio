@@ -12,7 +12,7 @@ export default function Contact() {
           max-w-6xl mx-auto
           grid grid-cols-1 lg:grid-cols-2
           gap-12
-          p-8 md:p-12
+          p-1 md:p-12
         "
       >
         {/* LEFT: Contact Details */}
@@ -62,7 +62,7 @@ export default function Contact() {
           action="https://formsubmit.co/deyprakash152@gmail.com"
           method="POST"
           className="
-            p-6 md:p-8
+            p-1 md:p-8
             space-y-5
           "
         >
