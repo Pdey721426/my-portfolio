@@ -15,9 +15,9 @@ export default function Intro() {
     },
     {
       icon: <FaFacebook />,
-      link: "https://www.facebook.com/prakash.riddhi.12345",
+      link: "https://www.facebook.com/Prakash Dey",
     },
-    { icon: <FaSquareXTwitter />, link: "https://twitter.com/PrakashRiddhi12" },
+    { icon: <FaSquareXTwitter />, link: "https://twitter.com/Prakash12" },
   ];
 
   return (
