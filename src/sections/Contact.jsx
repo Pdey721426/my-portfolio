@@ -5,9 +5,8 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 
 export default function Contact() {
   return (
-    <Section>
+    <Section id="contacts" className="py-16 ">
       <div
-        id="contacts"
         className="
           max-w-6xl mx-auto
           grid grid-cols-1 lg:grid-cols-2

@@ -16,7 +16,7 @@ const workData = [
 
 export default function WorkExperience() {
   return (
-    <section id="experience" className="py-16  text-white">
+    <section id="experience" className="py-20  text-white">
       <div className="max-w-5xl mx-auto px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">Experience & Education</h2>
         

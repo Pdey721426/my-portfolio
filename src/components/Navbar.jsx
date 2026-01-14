@@ -10,7 +10,7 @@ export default function Navbar({ isOpen, setIsOpen }) {
 
       {/* Desktop links */}
       <ul className="hidden md:flex space-x-6">
-        <li
+        {/* <li
           className="
   relative text-gray-300
   after:absolute after:left-0 after:-bottom-1
@@ -21,7 +21,7 @@ export default function Navbar({ isOpen, setIsOpen }) {
 "
         >
           <a href="#intro">Intro</a>
-        </li>
+        </li> */}
         <li
           className="
   relative text-gray-300
@@ -90,7 +90,7 @@ export default function Navbar({ isOpen, setIsOpen }) {
   hover:after:w-full
 "
         >
-          <a href="#contact">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
       </ul>
 

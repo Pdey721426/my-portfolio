@@ -41,7 +41,7 @@ export default function SidePanel({ isOpen, setIsOpen }) {
         </button>
 
         <ul className="mt-16 space-y-6 px-6">
-          <li
+          {/* <li
             className={`
     relative text-gray-300
     transition-all duration-1000
@@ -51,7 +51,7 @@ export default function SidePanel({ isOpen, setIsOpen }) {
             <a href="#intro" onClick={() => setIsOpen(false)}>
               Intro
             </a>
-          </li>
+          </li> */}
           <li
             className={`
     relative text-gray-300
@@ -103,7 +103,7 @@ export default function SidePanel({ isOpen, setIsOpen }) {
     ${isOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-6"}
   `}
           >
-            <a href="#contact" onClick={() => setIsOpen(false)}>
+            <a href="#contacts" onClick={() => setIsOpen(false)}>
               Contact
             </a>
           </li>

@@ -2,7 +2,7 @@ import Section from "../components/Section";
 
 export default function Capabilities() {
   return (
-    <Section id="capabilities" className="py-16 ">
+    <Section id="capabilities" className="py-20 ">
       <h2 className="text-3xl font-semibold mb-12">
         What I Do
       </h2>
